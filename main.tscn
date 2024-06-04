@@ -1,0 +1,2369 @@
+[gd_scene load_steps=122 format=3 uid="uid://0e5oinrwl14i"]
+
+[ext_resource type="Script" path="res://main.gd" id="1_c6e45"]
+[ext_resource type="Texture2D" uid="uid://dfmud1qadvlh7" path="res://Map/l30off47uim91.jpg" id="1_w2xx7"]
+[ext_resource type="PackedScene" uid="uid://dg66lkhiv7708" path="res://main_menu.tscn" id="2_rn4nl"]
+[ext_resource type="PackedScene" uid="uid://cdgxldrvi7gna" path="res://player.tscn" id="2_ukaxr"]
+[ext_resource type="Script" path="res://PlanetScripts/Jelucan.gd" id="3_38ca1"]
+[ext_resource type="Script" path="res://Systems.gd" id="3_yucck"]
+[ext_resource type="Script" path="res://PlanetScripts/Agamar.gd" id="4_rgd6x"]
+[ext_resource type="Script" path="res://PlanetScripts/Serenno.gd" id="5_qlga6"]
+[ext_resource type="Script" path="res://PlanetScripts/Dantooine.gd" id="6_popjm"]
+[ext_resource type="Script" path="res://PlanetScripts/Jedha.gd" id="7_agarw"]
+[ext_resource type="Script" path="res://PlanetScripts/Er'kit.gd" id="8_pcfex"]
+[ext_resource type="Script" path="res://PlanetScripts/Pasaana.gd" id="9_o8ow2"]
+[ext_resource type="Script" path="res://PlanetScripts/Mortis.gd" id="10_avuqo"]
+[ext_resource type="Script" path="res://PlanetScripts/Moraband.gd" id="11_jdv20"]
+[ext_resource type="Script" path="res://PlanetScripts/Yavin.gd" id="12_aedta"]
+[ext_resource type="Script" path="res://PlanetScripts/Maridun.gd" id="13_sx4sd"]
+[ext_resource type="Script" path="res://PlanetScripts/Saleucami.gd" id="14_cdj0m"]
+[ext_resource type="Script" path="res://PlanetScripts/Felucia.gd" id="15_edu6m"]
+[ext_resource type="Script" path="res://PlanetScripts/Eriadu.gd" id="16_r525l"]
+[ext_resource type="Script" path="res://PlanetScripts/Sissubo.gd" id="17_t33iu"]
+[ext_resource type="Script" path="res://PlanetScripts/Chandrila.gd" id="18_ge2re"]
+[ext_resource type="Script" path="res://PlanetScripts/Dathomir.gd" id="19_8ubxv"]
+[ext_resource type="Script" path="res://PlanetScripts/Ithor.gd" id="20_kfd2h"]
+[ext_resource type="Script" path="res://PlanetScripts/Anoat.gd" id="21_i5j6j"]
+[ext_resource type="Script" path="res://PlanetScripts/Mimban.gd" id="22_ywhd5"]
+[ext_resource type="Script" path="res://PlanetScripts/Exegol.gd" id="23_bakbl"]
+[ext_resource type="Script" path="res://PlanetScripts/Mandalore.gd" id="24_v32tj"]
+[ext_resource type="Script" path="res://PlanetScripts/Malachor.gd" id="25_ihyt0"]
+[ext_resource type="Script" path="res://PlanetScripts/Devaron.gd" id="26_av2l6"]
+[ext_resource type="Script" path="res://PlanetScripts/Ando.gd" id="27_50i4u"]
+[ext_resource type="Script" path="res://PlanetScripts/Christophsis.gd" id="28_vodxd"]
+[ext_resource type="Script" path="res://PlanetScripts/Ord Mantell.gd" id="29_ig2sk"]
+[ext_resource type="Script" path="res://PlanetScripts/Umbara.gd" id="30_ix7v6"]
+[ext_resource type="Script" path="res://PlanetScripts/Rugosa.gd" id="31_3sp6m"]
+[ext_resource type="Script" path="res://PlanetScripts/Wobani.gd" id="32_niwup"]
+[ext_resource type="Script" path="res://PlanetScripts/Skako Minor.gd" id="33_e52sw"]
+[ext_resource type="Script" path="res://PlanetScripts/Alderaan.gd" id="34_gv4ew"]
+[ext_resource type="Script" path="res://PlanetScripts/Balnab.gd" id="35_ky3wr"]
+[ext_resource type="Script" path="res://PlanetScripts/Ilum.gd" id="36_8dy6m"]
+[ext_resource type="Script" path="res://PlanetScripts/Cantonica.gd" id="37_sl72b"]
+[ext_resource type="Script" path="res://PlanetScripts/Mon Cala.gd" id="38_p1vvj"]
+[ext_resource type="Script" path="res://PlanetScripts/Savareen.gd" id="39_hvg6a"]
+[ext_resource type="Script" path="res://PlanetScripts/Florrum.gd" id="40_f4apy"]
+[ext_resource type="Script" path="res://PlanetScripts/Ryloth.gd" id="41_qexsd"]
+[ext_resource type="Script" path="res://PlanetScripts/Abafar.gd" id="42_0mjbc"]
+[ext_resource type="Script" path="res://PlanetScripts/Ahch-To.gd" id="43_r6lus"]
+[ext_resource type="Script" path="res://PlanetScripts/Jabiim.gd" id="44_1xac7"]
+[ext_resource type="Script" path="res://PlanetScripts/Onderon.gd" id="45_tixr5"]
+[ext_resource type="Script" path="res://PlanetScripts/Vardos.gd" id="46_3wevr"]
+[ext_resource type="Script" path="res://PlanetScripts/Rodia.gd" id="47_16xlo"]
+[ext_resource type="Script" path="res://PlanetScripts/Kessel.gd" id="48_43b7x"]
+[ext_resource type="Script" path="res://PlanetScripts/Mygeeto.gd" id="49_w0hv6"]
+[ext_resource type="Script" path="res://PlanetScripts/Kashyyyk.gd" id="50_pk05k"]
+[ext_resource type="Script" path="res://PlanetScripts/Trandosha.gd" id="51_ue1ln"]
+[ext_resource type="Script" path="res://PlanetScripts/Zygerria.gd" id="52_xhoo0"]
+[ext_resource type="Script" path="res://PlanetScripts/Coruscant.gd" id="53_t7pg2"]
+[ext_resource type="Script" path="res://PlanetScripts/Kuat.gd" id="54_xyan5"]
+[ext_resource type="Script" path="res://PlanetScripts/Rakata Prime.gd" id="55_q78ln"]
+[ext_resource type="Script" path="res://PlanetScripts/Ajan Kloss.gd" id="56_7lfkr"]
+[ext_resource type="Script" path="res://PlanetScripts/Pillio.gd" id="57_aqvrw"]
+[ext_resource type="Script" path="res://PlanetScripts/Wrea.gd" id="58_4oxwd"]
+[ext_resource type="Script" path="res://PlanetScripts/Batuu.gd" id="59_hybyc"]
+[ext_resource type="Script" path="res://PlanetScripts/Daiyu.gd" id="60_6cegw"]
+[ext_resource type="Script" path="res://PlanetScripts/Corellia.gd" id="61_wj6my"]
+[ext_resource type="Script" path="res://PlanetScripts/Rishi.gd" id="62_iygqq"]
+[ext_resource type="Script" path="res://PlanetScripts/Kamino.gd" id="63_xls8g"]
+[ext_resource type="Script" path="res://PlanetScripts/Subterrel.gd" id="64_afr5j"]
+[ext_resource type="Script" path="res://PlanetScripts/Zeffo.gd" id="65_6ji5a"]
+[ext_resource type="Script" path="res://PlanetScripts/Nal Hutta.gd" id="66_hrot0"]
+[ext_resource type="Script" path="res://PlanetScripts/Castilon.gd" id="67_5ga0w"]
+[ext_resource type="Script" path="res://PlanetScripts/Kijimi.gd" id="68_ur86t"]
+[ext_resource type="Script" path="res://PlanetScripts/Hosnian Prime.gd" id="69_s7jup"]
+[ext_resource type="Script" path="res://PlanetScripts/Mapuzo.gd" id="70_g2e6v"]
+[ext_resource type="Script" path="res://PlanetScripts/Toydaria.gd" id="71_ljne5"]
+[ext_resource type="Script" path="res://PlanetScripts/Scarif.gd" id="72_0h561"]
+[ext_resource type="Script" path="res://PlanetScripts/Eadu.gd" id="73_a6rm0"]
+[ext_resource type="Script" path="res://PlanetScripts/Vandor-1.gd" id="74_ub2l0"]
+[ext_resource type="Script" path="res://PlanetScripts/Bothawui.gd" id="75_4trmp"]
+[ext_resource type="Script" path="res://PlanetScripts/Aaleen.gd" id="76_xg6nw"]
+[ext_resource type="Script" path="res://PlanetScripts/Lothal.gd" id="77_ibh8k"]
+[ext_resource type="Script" path="res://PlanetScripts/Alzoc III.gd" id="78_p03x5"]
+[ext_resource type="Script" path="res://PlanetScripts/Jakku.gd" id="79_nmb7n"]
+[ext_resource type="Script" path="res://PlanetScripts/Cato Neimoidia.gd" id="80_kue68"]
+[ext_resource type="Script" path="res://PlanetScripts/Lotho Minor.gd" id="81_nl3ho"]
+[ext_resource type="Script" path="res://PlanetScripts/Ossus.gd" id="82_yb5lp"]
+[ext_resource type="Script" path="res://PlanetScripts/Esseles.gd" id="83_8rkwc"]
+[ext_resource type="Script" path="res://PlanetScripts/Ruusan.gd" id="84_54lkx"]
+[ext_resource type="Script" path="res://PlanetScripts/Crait.gd" id="85_neo6c"]
+[ext_resource type="Script" path="res://PlanetScripts/Takodana.gd" id="86_amxhb"]
+[ext_resource type="Script" path="res://PlanetScripts/Polis Massa.gd" id="87_hqnih"]
+[ext_resource type="Script" path="res://PlanetScripts/Rattatak.gd" id="88_4if4h"]
+[ext_resource type="Script" path="res://PlanetScripts/Iridonia.gd" id="89_08qoh"]
+[ext_resource type="Script" path="res://PlanetScripts/Endor.gd" id="90_msath"]
+[ext_resource type="Script" path="res://PlanetScripts/Kef Bir.gd" id="91_bonmh"]
+[ext_resource type="Script" path="res://PlanetScripts/Shili.gd" id="92_m7tm7"]
+[ext_resource type="Script" path="res://PlanetScripts/Atollon.gd" id="93_nxj7j"]
+[ext_resource type="Script" path="res://PlanetScripts/Akiva.gd" id="94_8sawn"]
+[ext_resource type="Script" path="res://PlanetScripts/Malastare.gd" id="95_5t1cy"]
+[ext_resource type="Script" path="res://PlanetScripts/Bespin and Hoth.gd" id="96_45384"]
+[ext_resource type="Script" path="res://PlanetScripts/Bracca.gd" id="97_uetap"]
+[ext_resource type="Script" path="res://PlanetScripts/Teth.gd" id="98_ent1m"]
+[ext_resource type="Script" path="res://PlanetScripts/Naboo.gd" id="99_dm817"]
+[ext_resource type="Script" path="res://PlanetScripts/Iego.gd" id="100_yja84"]
+[ext_resource type="Script" path="res://PlanetScripts/Nevarro.gd" id="101_wi8v6"]
+[ext_resource type="Script" path="res://PlanetScripts/Concord Dawn.gd" id="102_rwdg0"]
+[ext_resource type="Script" path="res://PlanetScripts/Sullust.gd" id="103_mx03s"]
+[ext_resource type="Script" path="res://PlanetScripts/Fondor.gd" id="104_ho5tw"]
+[ext_resource type="Script" path="res://PlanetScripts/Numidian Prime.gd" id="105_o4ugf"]
+[ext_resource type="Script" path="res://PlanetScripts/D'Qar.gd" id="106_rlhuc"]
+[ext_resource type="Script" path="res://PlanetScripts/Lah'mu.gd" id="107_b4gb2"]
+[ext_resource type="Script" path="res://PlanetScripts/Geonosis.gd" id="108_4gh2k"]
+[ext_resource type="Script" path="res://PlanetScripts/Tatooine.gd" id="109_8v8t0"]
+[ext_resource type="Script" path="res://PlanetScripts/Bogano.gd" id="110_x82i7"]
+[ext_resource type="Script" path="res://PlanetScripts/Dagobah.gd" id="111_kwj7d"]
+[ext_resource type="Script" path="res://PlanetScripts/Utapau.gd" id="112_lfpk4"]
+[ext_resource type="Script" path="res://PlanetScripts/Sorgan.gd" id="113_lixpw"]
+[ext_resource type="Script" path="res://PlanetScripts/Jestefad.gd" id="114_3w2cs"]
+[ext_resource type="Script" path="res://PlanetScripts/Mustafar.gd" id="115_rncbh"]
+[ext_resource type="Script" path="res://PlanetScripts/Nur.gd" id="116_glyam"]
+[ext_resource type="Script" path="res://PlanetScripts/Anaxes.gd" id="117_w2j02"]
+[ext_resource type="Script" path="res://test.gd" id="119_l7al2"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_c6e45")
+player_scene = ExtResource("2_ukaxr")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_w2xx7")
+metadata/_edit_lock_ = true
+
+[node name="Hyperlanes" type="Node2D" parent="."]
+
+[node name="JelucanJedha" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(190, -2004, 447, -1662)
+width = 5.0
+
+[node name="DantooineJedha" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(-220, -1702, 447, -1662)
+width = 5.0
+
+[node name="MortisJedha" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(813, -1557, 449, -1660)
+width = 5.0
+
+[node name="MortisYavin" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(863, -1434, 817, -1552)
+width = 5.0
+
+[node name="MortisMoraband" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(1269, -1462, 817, -1552)
+width = 5.0
+
+[node name="YavinSaleucami" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(866, -1409, 401, -1372)
+width = 5.0
+
+[node name="MorabandFelucia" type="Line2D" parent="Hyperlanes"]
+position = Vector2(0, 2)
+points = PackedVector2Array(1352, -1331, 1273, -1460)
+width = 5.0
+
+[node name="Er\'kitMoraband" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(1270, -1460, 1201, -1616)
+width = 5.0
+
+[node name="PasaanaEr\'kit" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(1202, -1618, 1602, -1618)
+width = 5.0
+
+[node name="SerennoEr\'kit" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(1097, -1841, 1196, -1620)
+width = 5.0
+
+[node name="AgamarSerenno" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(810, -1999, 1093, -1842)
+width = 5.0
+
+[node name="FeluciaEriadu" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(1352, -1331, 1715, -1244)
+width = 5.0
+
+[node name="SaleucamiDathomir" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(579, -1197, 402, -1375)
+width = 5.0
+
+[node name="DathomirMandalore" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(709, -1030, 580, -1195)
+width = 5.0
+
+[node name="IthorMandalore" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(279, -1103, 709, -1030)
+width = 5.0
+
+[node name="ChandrilaIthor" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(276, -1104, 170, -1224)
+width = 5.0
+
+[node name="MaridunSissubo" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(145, -1227, -91, -1399)
+width = 5.0
+
+[node name="MandaloreMalachor" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(1195, -1002, 709, -1026)
+width = 5.0
+
+[node name="MalachorChristophsis" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(1537, -794, 1197, -998)
+width = 5.0
+
+[node name="MalachorAndo" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(1949, -866, 1195, -1002)
+width = 5.0
+
+[node name="MandaloreRugosa" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(709, -1022, 758, -735)
+width = 5.0
+
+[node name="RugosaWobani" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(1208, -731, 762, -733)
+width = 5.0
+
+[node name="RugosaBalnab" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(995, -531, 762, -733)
+width = 5.0
+
+[node name="BalnabMon Cala" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(1002, -526, 1429, -483)
+width = 5.0
+
+[node name="SavareenMon Cala" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(1433, -481, 1818, -500)
+width = 5.0
+
+[node name="SavareenAbafar" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(1818, -500, 2010, -296)
+width = 5.0
+
+[node name="BalnabOnderon" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(1245, -217, 996, -527)
+width = 5.0
+
+[node name="AlderaanBalnab" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(372, -565, 1000, -529)
+width = 5.0
+
+[node name="OnderonKashyyyk" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(1518, -148, 1246, -218)
+width = 5.0
+
+[node name="TrandoshaVardos" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(1518, -127, 970, -94)
+width = 5.0
+
+[node name="DevaronAlderaan" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(284, -861, 365, -565)
+width = 5.0
+
+[node name="AlderaanRyloth" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(381, -248, 370, -564)
+width = 5.0
+
+[node name="RylothJabiim" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(699, -230, 388, -252)
+width = 5.0
+
+[node name="JabiimVardos" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(969, -94, 696, -230)
+width = 5.0
+
+[node name="MimbanDevaron" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(-131, -1076, 283, -867)
+width = 5.0
+
+[node name="AnoatMimban" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(-382, -1106, -134, -1077)
+width = 5.0
+
+[node name="AnoatExegol" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(-380, -1101, -1037, -1042)
+width = 5.0
+
+[node name="AnoatOrd Mantell" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(-205, -790, -379, -1102)
+width = 5.0
+
+[node name="Ord MantellSkako Minor" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(-9, -568, -205, -791)
+width = 5.0
+
+[node name="Skako MinorAlderaan" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(-7, -567, 368, -566)
+width = 5.0
+
+[node name="VardosMygeeto" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(970, -91, 570, -45)
+width = 5.0
+
+[node name="MygeetoCoruscant" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(565, -48, -5, -7)
+width = 5.0
+
+[node name="FlorrumRyloth" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(43, -376, 386, -247)
+width = 5.0
+
+[node name="FlorrumCoruscant" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(41, -379, -5, -4)
+width = 5.0
+
+[node name="RodiaCoruscant" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(-293, -193, -4, -5)
+width = 5.0
+
+[node name="RodiaKessel" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(-697, -149, -294, -190)
+width = 5.0
+
+[node name="Ahch-ToKessel" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(-1608, -334, -701, -147)
+width = 5.0
+
+[node name="Ord MantellUmbara" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(-564, -756, -203, -790)
+width = 5.0
+
+[node name="UmbaraCantonica" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(-503, -476, -570, -757)
+width = 5.0
+
+[node name="IlumCantonica" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(-1100, -537, -496, -478)
+width = 5.0
+
+[node name="CoruscantKuat" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(441, 175, -5, -2)
+width = 5.0
+
+[node name="KuatAjan Kloss" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(441, 175, 777, 194)
+width = 5.0
+
+[node name="KuatZeffo" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(441, 175, 777, 477)
+width = 5.0
+
+[node name="MygeetoAjan Kloss" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(571, -48, 781, 194)
+width = 5.0
+
+[node name="CorelliaZeffo" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(360, 367, 777, 477)
+width = 5.0
+
+[node name="CoruscantCorellia" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(362, 367, -5, -2)
+width = 5.0
+
+[node name="ZeffoHosnian Prime" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(777, 477, 328, 548)
+width = 5.0
+
+[node name="ZeffoKijimi" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(1133, 625, 781, 476)
+width = 5.0
+
+[node name="Ajan KlossBatuu" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(1391, 313, 781, 199)
+width = 5.0
+
+[node name="PillioBatuu" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(1390, 315, 1219, 127)
+width = 5.0
+
+[node name="VardosPillio" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(1218, 130, 971, -89)
+width = 5.0
+
+[node name="PillioWrea" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(1220, 131, 1610, 150)
+width = 5.0
+
+[node name="WreaDaiyu" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(1937, 261, 1609, 152)
+width = 5.0
+
+[node name="ZygerriaDaiyu" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(1940, 260, 2004, -33)
+width = 5.0
+
+[node name="BatuuMapuzo" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(1393, 315, 1667, 530)
+width = 5.0
+
+[node name="BatuuNal Hutta" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(1952, 486, 1392, 313)
+width = 5.0
+
+[node name="CastilonNal Hutta" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(2327, 478, 1959, 482)
+width = 5.0
+
+[node name="MapuzoToydaria" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(1872, 665, 1669, 535)
+width = 5.0
+
+[node name="ToydariaLothal" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(2093, 818, 1875, 667)
+width = 5.0
+
+[node name="ZeffoVandor-1" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(1156, 921, 778, 478)
+width = 5.0
+
+[node name="Vandor-1Aaleen" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(1666, 940, 1156, 922)
+width = 5.0
+
+[node name="KijimiBothawui" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(1746, 855, 1135, 623)
+width = 5.0
+
+[node name="MapuzoKijimi" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(1139, 627, 1669, 535)
+width = 5.0
+
+[node name="EaduVandor-1" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(1154, 925, 794, 883)
+width = 5.0
+
+[node name="ScarifEadu" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(795, 885, 513, 780)
+width = 5.0
+
+[node name="Hosnian PrimeScarif" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(512, 783, 328, 546)
+width = 5.0
+
+[node name="ScarifAtollon" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(512, 783, 690, 1105)
+width = 5.0
+
+[node name="Lotho MinorAtollon" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(691, 1105, 300, 1008)
+width = 5.0
+
+[node name="ScarifOssus" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(513, 786, -208, 923)
+width = 5.0
+
+[node name="AtollonAlzoc III" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(691, 1105, 1269, 1116)
+width = 5.0
+
+[node name="Vandor-1Alzoc III" type="Line2D" parent="Hyperlanes"]
+position = Vector2(0, -3)
+points = PackedVector2Array(1270, 1117, 1154, 928)
+width = 5.0
+
+[node name="Alzoc IIINaboo" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(1307, 1277, 1273, 1122)
+width = 5.0
+
+[node name="MalastareNaboo" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(1309, 1275, 969, 1230)
+width = 5.0
+
+[node name="MalastareAkiva" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(969, 1229, 508, 1311)
+width = 5.0
+
+[node name="AkivaTeth" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(748, 1427, 507, 1311)
+width = 5.0
+
+[node name="Alzoc IIINumidian Prime" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(1659, 1250, 1272, 1117)
+width = 5.0
+
+[node name="Numidian PrimeBogano" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(1663, 1248, 2027, 1275)
+width = 5.0
+
+[node name="Numidian PrimeGeonosis" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(1695, 1491, 1663, 1254)
+width = 5.0
+
+[node name="D\'QarGeonosis" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(1694, 1492, 1360, 1481)
+width = 5.0
+
+[node name="TethD\'Qar" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(1362, 1482, 748, 1426)
+width = 5.0
+
+[node name="TethFondor" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(974, 1616, 754, 1433)
+width = 5.0
+
+[node name="FondorLah\'mu" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(1279, 1795, 972, 1617)
+width = 5.0
+
+[node name="OssusShili" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(108, 1172, -214, 920)
+width = 5.0
+
+[node name="ShiliAkiva" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(508, 1310, 108, 1176)
+width = 5.0
+
+[node name="AkivaConcord Dawn" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(502, 1309, 557, 1723)
+width = 5.0
+
+[node name="Concord DawnSullust" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(819, 1726, 566, 1719)
+width = 5.0
+
+[node name="SullustDagobah" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(889, 2033, 817, 1730)
+width = 5.0
+
+[node name="BraccaConcord Dawn" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(560, 1722, 197, 1603)
+width = 5.0
+
+[node name="BraccaNevarro" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(319, 1913, 194, 1607)
+width = 5.0
+
+[node name="NevarroDagobah" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(890, 2033, 322, 1910)
+width = 5.0
+
+[node name="DagobahUtapau" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(890, 2033, 992, 2116)
+width = 5.0
+
+[node name="UtapauSorgan" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(988, 2119, 1183, 2142)
+width = 5.0
+
+[node name="NevarroJestefad" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(370, 2153, 322, 1910)
+width = 5.0
+
+[node name="NevarroAnaxes" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(897, 2283, 322, 1910)
+width = 5.0
+
+[node name="IegoJestefad" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(375, 2155, -126, 2102)
+width = 5.0
+
+[node name="Bespin and HothNevarro" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(-20, 1841, 322, 1910)
+width = 5.0
+
+[node name="IridoniaBracca" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(199, 1608, -288, 1520)
+width = 5.0
+
+[node name="IridoniaEndor" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(-670, 1686, -288, 1520)
+width = 5.0
+
+[node name="RattatakIridonia" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(-799, 1480, -290, 1519)
+width = 5.0
+
+[node name="TakodanaIridonia" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(-287, 1519, -526, 1287)
+width = 5.0
+
+[node name="TakodanaPolis Massa" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(-522, 1293, -768, 1330)
+width = 5.0
+
+[node name="EsselesShili" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(105, 1174, -544, 1134)
+width = 5.0
+
+[node name="RuusanOssus" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(-212, 920, -820, 899)
+width = 5.0
+
+[node name="CraitRuusan" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(-1147, 874, -825, 895)
+width = 5.0
+
+[node name="Cato NeimoidiaOssus" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(-213, 920, -469, 669)
+width = 5.0
+
+[node name="JakkuCato Neimoidia" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(-592, 563, -471, 664)
+width = 5.0
+
+[node name="SubterrelJakku" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(-592, 563, -1037, 343)
+width = 5.0
+
+[node name="KaminoJakku" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(-592, 563, -896, 259)
+width = 5.0
+
+[node name="JaminoRishi" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(-900, 262, -600, 278)
+width = 5.0
+
+[node name="Rakata PrimeKamino" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(-977, 148, -908, 255)
+width = 5.0
+
+[node name="KesselRishi" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(-607, 276, -698, -145)
+width = 5.0
+
+[node name="CantonicaRodia" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(-503, -476, -293, -190)
+width = 5.0
+
+[node name="IthorMimban" type="Line2D" parent="Hyperlanes"]
+points = PackedVector2Array(277, -1101, -129, -1078)
+width = 5.0
+
+[node name="Systems" type="Node2D" parent="."]
+script = ExtResource("3_yucck")
+
+[node name="Jelucan" type="Button" parent="Systems"]
+offset_left = 173.0
+offset_top = -2056.0
+offset_right = 344.0
+offset_bottom = -1988.0
+button_mask = 3
+flat = true
+script = ExtResource("3_38ca1")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Jelucan"]
+position = Vector2(55, -57)
+
+[node name="Planet" type="Node2D" parent="Systems/Jelucan"]
+position = Vector2(14, 52)
+
+[node name="Agamar" type="Button" parent="Systems"]
+offset_left = 797.0
+offset_top = -2054.0
+offset_right = 968.0
+offset_bottom = -1986.0
+button_mask = 3
+flat = true
+script = ExtResource("4_rgd6x")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Agamar"]
+position = Vector2(18, -62)
+
+[node name="Planet" type="Node2D" parent="Systems/Agamar"]
+position = Vector2(13, 55)
+
+[node name="Serenno" type="Button" parent="Systems"]
+offset_left = 1084.0
+offset_top = -1897.0
+offset_right = 1264.0
+offset_bottom = -1829.0
+button_mask = 3
+flat = true
+script = ExtResource("5_qlga6")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Serenno"]
+position = Vector2(42, -53)
+
+[node name="Planet" type="Node2D" parent="Systems/Serenno"]
+position = Vector2(12, 54)
+
+[node name="Dantooine" type="Button" parent="Systems"]
+offset_left = -235.0
+offset_top = -1770.0
+offset_right = -4.0
+offset_bottom = -1694.0
+button_mask = 3
+flat = true
+script = ExtResource("6_popjm")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Dantooine"]
+position = Vector2(45, -57)
+
+[node name="Planet" type="Node2D" parent="Systems/Dantooine"]
+position = Vector2(15, 61)
+
+[node name="Jedha" type="Button" parent="Systems"]
+offset_left = 437.0
+offset_top = -1718.0
+offset_right = 570.0
+offset_bottom = -1650.0
+button_mask = 3
+flat = true
+script = ExtResource("7_agarw")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Jedha"]
+position = Vector2(32, -68)
+
+[node name="Planet" type="Node2D" parent="Systems/Jedha"]
+position = Vector2(13, 56)
+
+[node name="Er\'kit" type="Button" parent="Systems"]
+offset_left = 1187.0
+offset_top = -1673.0
+offset_right = 1313.0
+offset_bottom = -1605.0
+button_mask = 3
+flat = true
+script = ExtResource("8_pcfex")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Er\'kit"]
+position = Vector2(79, -66)
+
+[node name="Planet" type="Node2D" parent="Systems/Er\'kit"]
+position = Vector2(15, 53)
+
+[node name="Pasaana" type="Button" parent="Systems"]
+offset_left = 1591.0
+offset_top = -1671.0
+offset_right = 1781.0
+offset_bottom = -1603.0
+button_mask = 3
+flat = true
+script = ExtResource("9_o8ow2")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Pasaana"]
+position = Vector2(-1, -38)
+
+[node name="Planet" type="Node2D" parent="Systems/Pasaana"]
+position = Vector2(11, 54)
+
+[node name="Mortis" type="Button" parent="Systems"]
+offset_left = 799.0
+offset_top = -1611.0
+offset_right = 941.0
+offset_bottom = -1543.0
+button_mask = 3
+flat = true
+script = ExtResource("10_avuqo")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Mortis"]
+position = Vector2(-2, -54)
+
+[node name="Planet" type="Node2D" parent="Systems/Mortis"]
+position = Vector2(17, 53)
+
+[node name="Moraband" type="Button" parent="Systems"]
+offset_left = 1255.0
+offset_top = -1515.0
+offset_right = 1475.0
+offset_bottom = -1447.0
+button_mask = 3
+flat = true
+script = ExtResource("11_jdv20")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Moraband"]
+position = Vector2(263, -8)
+
+[node name="Planet" type="Node2D" parent="Systems/Moraband"]
+position = Vector2(18, 53)
+
+[node name="Yavin" type="Button" parent="Systems"]
+offset_left = 853.0
+offset_top = -1486.0
+offset_right = 1008.0
+offset_bottom = -1355.0
+button_mask = 3
+flat = true
+script = ExtResource("12_aedta")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Yavin"]
+position = Vector2(78, 181)
+
+[node name="Planet" type="Node2D" parent="Systems/Yavin"]
+position = Vector2(15, 53)
+
+[node name="Maridun" type="Button" parent="Systems"]
+offset_left = -108.0
+offset_top = -1457.0
+offset_right = 70.0
+offset_bottom = -1389.0
+button_mask = 3
+flat = true
+script = ExtResource("13_sx4sd")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Maridun"]
+position = Vector2(-32, -27)
+
+[node name="Planet" type="Node2D" parent="Systems/Maridun"]
+position = Vector2(18, 54)
+
+[node name="Saleucami" type="Button" parent="Systems"]
+offset_left = 384.0
+offset_top = -1430.0
+offset_right = 616.0
+offset_bottom = -1362.0
+button_mask = 3
+flat = true
+script = ExtResource("14_cdj0m")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Saleucami"]
+position = Vector2(-9, -54)
+
+[node name="Planet" type="Node2D" parent="Systems/Saleucami"]
+position = Vector2(17, 54)
+
+[node name="Felucia" type="Button" parent="Systems"]
+offset_left = 1334.0
+offset_top = -1385.0
+offset_right = 1505.0
+offset_bottom = -1317.0
+button_mask = 3
+flat = true
+script = ExtResource("15_edu6m")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Felucia"]
+position = Vector2(183, -35)
+
+[node name="Planet" type="Node2D" parent="Systems/Felucia"]
+position = Vector2(17, 55)
+
+[node name="Eriadu" type="Button" parent="Systems"]
+offset_left = 1704.0
+offset_top = -1295.0
+offset_right = 1846.0
+offset_bottom = -1227.0
+button_mask = 3
+flat = true
+script = ExtResource("16_r525l")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Eriadu"]
+position = Vector2(21, -48)
+
+[node name="Planet" type="Node2D" parent="Systems/Eriadu"]
+position = Vector2(17, 52)
+
+[node name="Sissubo" type="Button" parent="Systems"]
+offset_left = -9.0
+offset_top = -1241.0
+offset_right = 159.0
+offset_bottom = -1173.0
+button_mask = 3
+flat = true
+script = ExtResource("17_t33iu")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Sissubo"]
+position = Vector2(-84, -29)
+
+[node name="Planet" type="Node2D" parent="Systems/Sissubo"]
+position = Vector2(156, 15)
+
+[node name="Chandrila" type="Button" parent="Systems"]
+offset_left = 157.0
+offset_top = -1281.0
+offset_right = 360.0
+offset_bottom = -1213.0
+button_mask = 3
+flat = true
+script = ExtResource("18_ge2re")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Chandrila"]
+position = Vector2(5, -52)
+
+[node name="Planet" type="Node2D" parent="Systems/Chandrila"]
+position = Vector2(11, 55)
+
+[node name="Dathomir" type="Button" parent="Systems"]
+offset_left = 561.0
+offset_top = -1250.0
+offset_right = 775.0
+offset_bottom = -1182.0
+button_mask = 3
+flat = true
+script = ExtResource("19_8ubxv")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Dathomir"]
+position = Vector2(73, -48)
+
+[node name="Planet" type="Node2D" parent="Systems/Dathomir"]
+position = Vector2(19, 54)
+
+[node name="Ithor" type="Button" parent="Systems"]
+offset_left = 266.0
+offset_top = -1159.0
+offset_right = 380.0
+offset_bottom = -1090.0
+button_mask = 3
+flat = true
+script = ExtResource("20_kfd2h")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Ithor"]
+position = Vector2(-44, 141)
+
+[node name="Planet" type="Node2D" parent="Systems/Ithor"]
+position = Vector2(13, 55)
+
+[node name="Anoat" type="Button" parent="Systems"]
+offset_left = -398.0
+offset_top = -1159.0
+offset_right = -268.0
+offset_bottom = -1091.0
+button_mask = 3
+flat = true
+script = ExtResource("21_i5j6j")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Anoat"]
+position = Vector2(-32, -27)
+
+[node name="Planet" type="Node2D" parent="Systems/Anoat"]
+position = Vector2(17, 54)
+
+[node name="Mimban" type="Button" parent="Systems"]
+offset_left = -148.0
+offset_top = -1127.0
+offset_right = 23.0
+offset_bottom = -1059.0
+button_mask = 3
+flat = true
+script = ExtResource("22_ywhd5")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Mimban"]
+position = Vector2(-32, -27)
+
+[node name="Planet" type="Node2D" parent="Systems/Mimban"]
+position = Vector2(16, 49)
+
+[node name="Exegol" type="Button" parent="Systems"]
+offset_left = -1056.0
+offset_top = -1097.0
+offset_right = -905.0
+offset_bottom = -1029.0
+button_mask = 3
+flat = true
+script = ExtResource("23_bakbl")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Exegol"]
+position = Vector2(-36, -54)
+
+[node name="Planet" type="Node2D" parent="Systems/Exegol"]
+position = Vector2(20, 53)
+
+[node name="Mandalore" type="Button" parent="Systems"]
+offset_left = 691.0
+offset_top = -1084.0
+offset_right = 921.0
+offset_bottom = -1016.0
+button_mask = 3
+flat = true
+script = ExtResource("24_v32tj")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Mandalore"]
+position = Vector2(102, -43)
+
+[node name="Planet" type="Node2D" parent="Systems/Mandalore"]
+position = Vector2(19, 56)
+
+[node name="Malachor" type="Button" parent="Systems"]
+offset_left = 1179.0
+offset_top = -1054.0
+offset_right = 1383.0
+offset_bottom = -986.0
+button_mask = 3
+flat = true
+script = ExtResource("25_ihyt0")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Malachor"]
+position = Vector2(-32, -27)
+
+[node name="Planet" type="Node2D" parent="Systems/Malachor"]
+position = Vector2(18, 54)
+
+[node name="Devaron" type="Button" parent="Systems"]
+offset_left = 270.0
+offset_top = -924.0
+offset_right = 454.0
+offset_bottom = -856.0
+button_mask = 3
+flat = true
+script = ExtResource("26_av2l6")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Devaron"]
+position = Vector2(116, 94)
+
+[node name="Planet" type="Node2D" parent="Systems/Devaron"]
+position = Vector2(16, 57)
+
+[node name="Ando" type="Button" parent="Systems"]
+offset_left = 1937.0
+offset_top = -920.0
+offset_right = 2050.0
+offset_bottom = -852.0
+button_mask = 3
+flat = true
+script = ExtResource("27_50i4u")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Ando"]
+position = Vector2(78, 124)
+
+[node name="Planet" type="Node2D" parent="Systems/Ando"]
+position = Vector2(14, 55)
+
+[node name="Christophsis" type="Button" parent="Systems"]
+offset_left = 1522.0
+offset_top = -862.0
+offset_right = 1792.0
+offset_bottom = -785.0
+button_mask = 3
+flat = true
+script = ExtResource("28_vodxd")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Christophsis"]
+position = Vector2(103, 112)
+
+[node name="Planet" type="Node2D" parent="Systems/Christophsis"]
+position = Vector2(16, 65)
+
+[node name="Ord Mantell" type="Button" parent="Systems"]
+offset_left = -223.0
+offset_top = -887.0
+offset_right = -53.0
+offset_bottom = -783.0
+button_mask = 3
+flat = true
+script = ExtResource("29_ig2sk")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Ord Mantell"]
+position = Vector2(162, -6)
+
+[node name="Planet" type="Node2D" parent="Systems/Ord Mantell"]
+position = Vector2(21, 96)
+
+[node name="Umbara" type="Button" parent="Systems"]
+offset_left = -584.0
+offset_top = -805.0
+offset_right = -413.0
+offset_bottom = -737.0
+button_mask = 3
+flat = true
+script = ExtResource("30_ix7v6")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Umbara"]
+position = Vector2(-32, -27)
+
+[node name="Planet" type="Node2D" parent="Systems/Umbara"]
+position = Vector2(16, 48)
+
+[node name="Rugosa" type="Button" parent="Systems"]
+offset_left = 749.0
+offset_top = -787.0
+offset_right = 910.0
+offset_bottom = -719.0
+button_mask = 3
+flat = true
+script = ExtResource("31_3sp6m")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Rugosa"]
+position = Vector2(-32, -27)
+
+[node name="Planet" type="Node2D" parent="Systems/Rugosa"]
+position = Vector2(14, 52)
+
+[node name="Wobani" type="Button" parent="Systems"]
+offset_left = 1191.0
+offset_top = -790.0
+offset_right = 1352.0
+offset_bottom = -722.0
+button_mask = 3
+flat = true
+script = ExtResource("32_niwup")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Wobani"]
+position = Vector2(-32, -27)
+
+[node name="Planet" type="Node2D" parent="Systems/Wobani"]
+position = Vector2(20, 58)
+
+[node name="Skako Minor" type="Button" parent="Systems"]
+offset_left = -23.0
+offset_top = -666.0
+offset_right = 120.0
+offset_bottom = -555.0
+button_mask = 3
+flat = true
+script = ExtResource("33_e52sw")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Skako Minor"]
+position = Vector2(-32, -27)
+
+[node name="Planet" type="Node2D" parent="Systems/Skako Minor"]
+position = Vector2(18, 98)
+
+[node name="Alderaan" type="Button" parent="Systems"]
+offset_left = 358.0
+offset_top = -623.0
+offset_right = 554.0
+offset_bottom = -555.0
+button_mask = 3
+flat = true
+script = ExtResource("34_gv4ew")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Alderaan"]
+position = Vector2(54, -57)
+
+[node name="Planet" type="Node2D" parent="Systems/Alderaan"]
+position = Vector2(12, 57)
+
+[node name="Balnab" type="Button" parent="Systems"]
+offset_left = 978.0
+offset_top = -593.0
+offset_right = 1136.0
+offset_bottom = -512.0
+button_mask = 3
+flat = true
+script = ExtResource("35_ky3wr")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Balnab"]
+position = Vector2(-32, -27)
+
+[node name="Planet" type="Node2D" parent="Systems/Balnab"]
+position = Vector2(21, 66)
+
+[node name="Ilum" type="Button" parent="Systems"]
+offset_left = -1118.0
+offset_top = -595.0
+offset_right = -1012.0
+offset_bottom = -527.0
+button_mask = 3
+flat = true
+script = ExtResource("36_8dy6m")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Ilum"]
+position = Vector2(-32, -27)
+
+[node name="Planet" type="Node2D" parent="Systems/Ilum"]
+position = Vector2(15, 58)
+
+[node name="Cantonica" type="Button" parent="Systems"]
+offset_left = -519.0
+offset_top = -541.0
+offset_right = -292.0
+offset_bottom = -467.0
+button_mask = 3
+flat = true
+script = ExtResource("37_sl72b")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Cantonica"]
+position = Vector2(87, -48)
+
+[node name="Planet" type="Node2D" parent="Systems/Cantonica"]
+position = Vector2(19, 62)
+
+[node name="Mon Cala" type="Button" parent="Systems"]
+offset_left = 1417.0
+offset_top = -582.0
+offset_right = 1526.0
+offset_bottom = -466.0
+button_mask = 3
+flat = true
+script = ExtResource("38_p1vvj")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Mon Cala"]
+position = Vector2(-32, -27)
+
+[node name="Planet" type="Node2D" parent="Systems/Mon Cala"]
+position = Vector2(16, 99)
+
+[node name="Savareen" type="Button" parent="Systems"]
+offset_left = 1800.0
+offset_top = -558.0
+offset_right = 2008.0
+offset_bottom = -490.0
+button_mask = 3
+flat = true
+script = ExtResource("39_hvg6a")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Savareen"]
+position = Vector2(-32, -27)
+
+[node name="Planet" type="Node2D" parent="Systems/Savareen"]
+position = Vector2(18, 55)
+
+[node name="Florrum" type="Button" parent="Systems"]
+offset_left = 32.0
+offset_top = -433.0
+offset_right = 206.0
+offset_bottom = -365.0
+button_mask = 3
+flat = true
+script = ExtResource("40_f4apy")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Florrum"]
+position = Vector2(-32, -27)
+
+[node name="Planet" type="Node2D" parent="Systems/Florrum"]
+position = Vector2(10, 54)
+
+[node name="Ryloth" type="Button" parent="Systems"]
+offset_left = 372.0
+offset_top = -298.0
+offset_right = 518.0
+offset_bottom = -230.0
+button_mask = 3
+flat = true
+script = ExtResource("41_qexsd")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Ryloth"]
+position = Vector2(-19, 118)
+
+[node name="Planet" type="Node2D" parent="Systems/Ryloth"]
+position = Vector2(16, 50)
+
+[node name="Abafar" type="Button" parent="Systems"]
+offset_left = 2000.0
+offset_top = -360.0
+offset_right = 2144.0
+offset_bottom = -281.0
+button_mask = 3
+flat = true
+script = ExtResource("42_0mjbc")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Abafar"]
+position = Vector2(66, -66)
+
+[node name="Planet" type="Node2D" parent="Systems/Abafar"]
+position = Vector2(12, 64)
+
+[node name="Ahch-To" type="Button" parent="Systems"]
+offset_left = -1626.0
+offset_top = -396.0
+offset_right = -1452.0
+offset_bottom = -314.0
+button_mask = 3
+flat = true
+script = ExtResource("43_r6lus")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Ahch-To"]
+position = Vector2(-32, -27)
+
+[node name="Planet" type="Node2D" parent="Systems/Ahch-To"]
+position = Vector2(14, 62)
+
+[node name="Jabiim" type="Button" parent="Systems"]
+offset_left = 686.0
+offset_top = -288.0
+offset_right = 831.0
+offset_bottom = -215.0
+button_mask = 3
+flat = true
+script = ExtResource("44_1xac7")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Jabiim"]
+position = Vector2(-32, -27)
+
+[node name="Planet" type="Node2D" parent="Systems/Jabiim"]
+position = Vector2(11, 58)
+
+[node name="Onderon" type="Button" parent="Systems"]
+offset_left = 1230.0
+offset_top = -269.0
+offset_right = 1412.0
+offset_bottom = -199.0
+button_mask = 3
+flat = true
+script = ExtResource("45_tixr5")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Onderon"]
+position = Vector2(32, -56)
+
+[node name="Planet" type="Node2D" parent="Systems/Onderon"]
+position = Vector2(15, 51)
+
+[node name="Vardos" type="Button" parent="Systems"]
+offset_left = 955.0
+offset_top = -143.0
+offset_right = 1107.0
+offset_bottom = -75.0
+button_mask = 3
+flat = true
+script = ExtResource("46_3wevr")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Vardos"]
+position = Vector2(13, -59)
+
+[node name="Planet" type="Node2D" parent="Systems/Vardos"]
+position = Vector2(15, 50)
+
+[node name="Rodia" type="Button" parent="Systems"]
+offset_left = -311.0
+offset_top = -242.0
+offset_right = -177.0
+offset_bottom = -174.0
+button_mask = 3
+flat = true
+script = ExtResource("47_16xlo")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Rodia"]
+position = Vector2(39, -58)
+
+[node name="Planet" type="Node2D" parent="Systems/Rodia"]
+position = Vector2(19, 52)
+
+[node name="Kessel" type="Button" parent="Systems"]
+offset_left = -711.0
+offset_top = -202.0
+offset_right = -571.0
+offset_bottom = -134.0
+button_mask = 3
+flat = true
+script = ExtResource("48_43b7x")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Kessel"]
+position = Vector2(-32, -27)
+
+[node name="Planet" type="Node2D" parent="Systems/Kessel"]
+position = Vector2(13, 54)
+
+[node name="Mygeeto" type="Button" parent="Systems"]
+offset_left = 551.0
+offset_top = -104.0
+offset_right = 728.0
+offset_bottom = -36.0
+button_mask = 3
+flat = true
+script = ExtResource("49_w0hv6")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Mygeeto"]
+position = Vector2(-32, -27)
+
+[node name="Planet" type="Node2D" parent="Systems/Mygeeto"]
+position = Vector2(16, 54)
+
+[node name="Kashyyyk" type="Button" parent="Systems"]
+offset_left = 1503.0
+offset_top = -202.0
+offset_right = 1705.0
+offset_bottom = -137.0
+button_mask = 3
+flat = true
+script = ExtResource("50_pk05k")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Kashyyyk"]
+position = Vector2(41, -54)
+
+[node name="Planet" type="Node2D" parent="Systems/Kashyyyk"]
+position = Vector2(16, 55)
+
+[node name="Trandosha" type="Button" parent="Systems"]
+offset_left = 1507.0
+offset_top = -136.0
+offset_right = 1729.0
+offset_bottom = -75.0
+button_mask = 3
+flat = true
+script = ExtResource("51_ue1ln")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Trandosha"]
+position = Vector2(-25, 106)
+
+[node name="Planet" type="Node2D" parent="Systems/Trandosha"]
+position = Vector2(12, 10)
+
+[node name="Zygerria" type="Button" parent="Systems"]
+offset_left = 1991.0
+offset_top = -90.0
+offset_right = 2167.0
+offset_bottom = -22.0
+button_mask = 3
+flat = true
+script = ExtResource("52_xhoo0")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Zygerria"]
+position = Vector2(-32, -27)
+
+[node name="Planet" type="Node2D" parent="Systems/Zygerria"]
+position = Vector2(11, 55)
+
+[node name="Coruscant" type="Button" parent="Systems"]
+offset_left = -27.0
+offset_top = -80.0
+offset_right = 296.0
+offset_bottom = 4.0
+button_mask = 3
+flat = true
+script = ExtResource("53_t7pg2")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Coruscant"]
+position = Vector2(109, -54)
+
+[node name="Planet" type="Node2D" parent="Systems/Coruscant"]
+position = Vector2(22, 75)
+
+[node name="Kuat" type="Button" parent="Systems"]
+offset_left = 423.0
+offset_top = 122.0
+offset_right = 526.0
+offset_bottom = 186.0
+button_mask = 3
+flat = true
+script = ExtResource("54_xyan5")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Kuat"]
+position = Vector2(-12, -47)
+
+[node name="Planet" type="Node2D" parent="Systems/Kuat"]
+position = Vector2(17, 53)
+
+[node name="Rakata Prime" type="Button" parent="Systems"]
+offset_left = -990.0
+offset_top = 54.0
+offset_right = -837.0
+offset_bottom = 156.0
+button_mask = 3
+flat = true
+script = ExtResource("55_q78ln")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Rakata Prime"]
+position = Vector2(-22, -54)
+
+[node name="Planet" type="Node2D" parent="Systems/Rakata Prime"]
+position = Vector2(12, 91)
+
+[node name="Ajan Kloss" type="Button" parent="Systems"]
+offset_left = 768.0
+offset_top = 138.0
+offset_right = 1000.0
+offset_bottom = 213.0
+button_mask = 3
+flat = true
+script = ExtResource("56_7lfkr")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Ajan Kloss"]
+position = Vector2(-32, -27)
+
+[node name="Planet" type="Node2D" parent="Systems/Ajan Kloss"]
+position = Vector2(13, 57)
+
+[node name="Pillio" type="Button" parent="Systems"]
+offset_left = 1207.0
+offset_top = 75.0
+offset_right = 1323.0
+offset_bottom = 143.0
+button_mask = 3
+flat = true
+script = ExtResource("57_aqvrw")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Pillio"]
+position = Vector2(-32, -48)
+
+[node name="Planet" type="Node2D" parent="Systems/Pillio"]
+position = Vector2(12, 55)
+
+[node name="Wrea" type="Button" parent="Systems"]
+offset_left = 1592.0
+offset_top = 95.0
+offset_right = 1708.0
+offset_bottom = 163.0
+button_mask = 3
+flat = true
+script = ExtResource("58_4oxwd")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Wrea"]
+position = Vector2(-32, -27)
+
+[node name="Planet" type="Node2D" parent="Systems/Wrea"]
+position = Vector2(18, 55)
+
+[node name="Batuu" type="Button" parent="Systems"]
+offset_left = 1377.0
+offset_top = 253.0
+offset_right = 1503.0
+offset_bottom = 325.0
+button_mask = 3
+flat = true
+script = ExtResource("59_hybyc")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Batuu"]
+position = Vector2(7, -52)
+
+[node name="Planet" type="Node2D" parent="Systems/Batuu"]
+position = Vector2(14, 61)
+
+[node name="Daiyu" type="Button" parent="Systems"]
+offset_left = 1928.0
+offset_top = 201.0
+offset_right = 2044.0
+offset_bottom = 272.0
+button_mask = 3
+flat = true
+script = ExtResource("60_6cegw")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Daiyu"]
+position = Vector2(164, -36)
+
+[node name="Planet" type="Node2D" parent="Systems/Daiyu"]
+position = Vector2(11, 59)
+
+[node name="Corellia" type="Button" parent="Systems"]
+offset_left = 348.0
+offset_top = 304.0
+offset_right = 514.0
+offset_bottom = 378.0
+button_mask = 3
+flat = true
+script = ExtResource("61_wj6my")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Corellia"]
+position = Vector2(-8, -39)
+
+[node name="Planet" type="Node2D" parent="Systems/Corellia"]
+position = Vector2(14, 63)
+
+[node name="Rishi" type="Button" parent="Systems"]
+offset_left = -615.0
+offset_top = 224.0
+offset_right = -505.0
+offset_bottom = 286.0
+button_mask = 3
+flat = true
+script = ExtResource("62_iygqq")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Rishi"]
+position = Vector2(54, -72)
+
+[node name="Planet" type="Node2D" parent="Systems/Rishi"]
+position = Vector2(14, 49)
+
+[node name="Kamino" type="Button" parent="Systems"]
+offset_left = -917.0
+offset_top = 206.0
+offset_right = -756.0
+offset_bottom = 273.0
+button_mask = 3
+flat = true
+script = ExtResource("63_xls8g")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Kamino"]
+position = Vector2(69, -40)
+
+[node name="Planet" type="Node2D" parent="Systems/Kamino"]
+position = Vector2(13, 54)
+
+[node name="Subterrel" type="Button" parent="Systems"]
+offset_left = -1052.0
+offset_top = 291.0
+offset_right = -843.0
+offset_bottom = 359.0
+button_mask = 3
+flat = true
+script = ExtResource("64_afr5j")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Subterrel"]
+position = Vector2(-40, -42)
+
+[node name="Planet" type="Node2D" parent="Systems/Subterrel"]
+position = Vector2(17, 51)
+
+[node name="Zeffo" type="Button" parent="Systems"]
+offset_left = 769.0
+offset_top = 423.0
+offset_right = 885.0
+offset_bottom = 491.0
+button_mask = 3
+flat = true
+script = ExtResource("65_6ji5a")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Zeffo"]
+position = Vector2(-32, -27)
+
+[node name="Planet" type="Node2D" parent="Systems/Zeffo"]
+position = Vector2(11, 53)
+
+[node name="Nal Hutta" type="Button" parent="Systems"]
+offset_left = 1940.0
+offset_top = 391.0
+offset_right = 2056.0
+offset_bottom = 498.0
+button_mask = 3
+flat = true
+script = ExtResource("66_hrot0")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Nal Hutta"]
+position = Vector2(-32, -27)
+
+[node name="Planet" type="Node2D" parent="Systems/Nal Hutta"]
+position = Vector2(15, 92)
+
+[node name="Castilon" type="Button" parent="Systems"]
+offset_left = 2167.0
+offset_top = 415.0
+offset_right = 2344.0
+offset_bottom = 493.0
+button_mask = 3
+flat = true
+script = ExtResource("67_5ga0w")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Castilon"]
+position = Vector2(-32, -27)
+
+[node name="Planet" type="Node2D" parent="Systems/Castilon"]
+position = Vector2(162, 62)
+
+[node name="Kijimi" type="Button" parent="Systems"]
+offset_left = 1123.0
+offset_top = 570.0
+offset_right = 1251.0
+offset_bottom = 639.0
+button_mask = 3
+flat = true
+script = ExtResource("68_ur86t")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Kijimi"]
+position = Vector2(-32, -27)
+
+[node name="Planet" type="Node2D" parent="Systems/Kijimi"]
+position = Vector2(13, 53)
+
+[node name="Hosnian Prime" type="Button" parent="Systems"]
+offset_left = 315.0
+offset_top = 450.0
+offset_right = 487.0
+offset_bottom = 557.0
+button_mask = 3
+flat = true
+script = ExtResource("69_s7jup")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Hosnian Prime"]
+position = Vector2(120, 129)
+
+[node name="Planet" type="Node2D" parent="Systems/Hosnian Prime"]
+position = Vector2(12, 96)
+
+[node name="Mapuzo" type="Button" parent="Systems"]
+offset_left = 1654.0
+offset_top = 482.0
+offset_right = 1814.0
+offset_bottom = 547.0
+button_mask = 3
+flat = true
+script = ExtResource("70_g2e6v")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Mapuzo"]
+position = Vector2(-32, -27)
+
+[node name="Planet" type="Node2D" parent="Systems/Mapuzo"]
+position = Vector2(15, 51)
+
+[node name="Toydaria" type="Button" parent="Systems"]
+offset_left = 1864.0
+offset_top = 618.0
+offset_right = 2044.0
+offset_bottom = 680.0
+button_mask = 3
+flat = true
+script = ExtResource("71_ljne5")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Toydaria"]
+position = Vector2(-32, -27)
+
+[node name="Planet" type="Node2D" parent="Systems/Toydaria"]
+position = Vector2(10, 49)
+
+[node name="Scarif" type="Button" parent="Systems"]
+offset_left = 499.0
+offset_top = 728.0
+offset_right = 629.0
+offset_bottom = 796.0
+button_mask = 3
+flat = true
+script = ExtResource("72_0h561")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Scarif"]
+position = Vector2(35, -51)
+
+[node name="Planet" type="Node2D" parent="Systems/Scarif"]
+position = Vector2(13, 53)
+
+[node name="Eadu" type="Button" parent="Systems"]
+offset_left = 783.0
+offset_top = 828.0
+offset_right = 886.0
+offset_bottom = 896.0
+button_mask = 3
+flat = true
+script = ExtResource("73_a6rm0")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Eadu"]
+position = Vector2(-32, -27)
+
+[node name="Planet" type="Node2D" parent="Systems/Eadu"]
+position = Vector2(11, 56)
+
+[node name="Vandor-1" type="Button" parent="Systems"]
+offset_left = 1140.0
+offset_top = 872.0
+offset_right = 1339.0
+offset_bottom = 940.0
+button_mask = 3
+flat = true
+script = ExtResource("74_ub2l0")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Vandor-1"]
+position = Vector2(51, -51)
+
+[node name="Planet" type="Node2D" parent="Systems/Vandor-1"]
+position = Vector2(16, 52)
+
+[node name="Bothawui" type="Button" parent="Systems"]
+offset_left = 1732.0
+offset_top = 795.0
+offset_right = 1930.0
+offset_bottom = 863.0
+button_mask = 3
+flat = true
+script = ExtResource("75_4trmp")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Bothawui"]
+position = Vector2(-41, -41)
+
+[node name="Planet" type="Node2D" parent="Systems/Bothawui"]
+position = Vector2(15, 57)
+
+[node name="Aaleen" type="Button" parent="Systems"]
+offset_left = 1656.0
+offset_top = 886.0
+offset_right = 1801.0
+offset_bottom = 954.0
+button_mask = 3
+flat = true
+script = ExtResource("76_xg6nw")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Aaleen"]
+position = Vector2(84, 101)
+
+[node name="Planet" type="Node2D" parent="Systems/Aaleen"]
+position = Vector2(12, 55)
+
+[node name="Lothal" type="Button" parent="Systems"]
+offset_left = 2083.0
+offset_top = 766.0
+offset_right = 2220.0
+offset_bottom = 829.0
+button_mask = 3
+flat = true
+script = ExtResource("77_ibh8k")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Lothal"]
+position = Vector2(-32, -27)
+
+[node name="Planet" type="Node2D" parent="Systems/Lothal"]
+position = Vector2(12, 51)
+
+[node name="Alzoc III" type="Button" parent="Systems"]
+offset_left = 1255.0
+offset_top = 1060.0
+offset_right = 1430.0
+offset_bottom = 1128.0
+button_mask = 3
+flat = true
+script = ExtResource("78_p03x5")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Alzoc III"]
+position = Vector2(82, -54)
+
+[node name="Planet" type="Node2D" parent="Systems/Alzoc III"]
+position = Vector2(16, 57)
+
+[node name="Jakku" type="Button" parent="Systems"]
+offset_left = -603.0
+offset_top = 511.0
+offset_right = -473.0
+offset_bottom = 579.0
+button_mask = 3
+flat = true
+script = ExtResource("79_nmb7n")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Jakku"]
+position = Vector2(13, -54)
+
+[node name="Planet" type="Node2D" parent="Systems/Jakku"]
+position = Vector2(13, 53)
+
+[node name="Cato Neimoidia" type="Button" parent="Systems"]
+offset_left = -482.0
+offset_top = 569.0
+offset_right = -261.0
+offset_bottom = 684.0
+button_mask = 3
+flat = true
+script = ExtResource("80_kue68")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Cato Neimoidia"]
+position = Vector2(57, -54)
+
+[node name="Planet" type="Node2D" parent="Systems/Cato Neimoidia"]
+position = Vector2(14, 98)
+
+[node name="Lotho Minor" type="Button" parent="Systems"]
+offset_left = 286.0
+offset_top = 912.0
+offset_right = 402.0
+offset_bottom = 1020.0
+button_mask = 3
+flat = true
+script = ExtResource("81_nl3ho")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Lotho Minor"]
+position = Vector2(-32, -27)
+
+[node name="Planet" type="Node2D" parent="Systems/Lotho Minor"]
+position = Vector2(14, 95)
+
+[node name="Ossus" type="Button" parent="Systems"]
+offset_left = -225.0
+offset_top = 872.0
+offset_right = -99.0
+offset_bottom = 936.0
+button_mask = 3
+flat = true
+script = ExtResource("82_yb5lp")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Ossus"]
+position = Vector2(22, -49)
+
+[node name="Planet" type="Node2D" parent="Systems/Ossus"]
+position = Vector2(13, 49)
+
+[node name="Esseles" type="Button" parent="Systems"]
+offset_left = -557.0
+offset_top = 1082.0
+offset_right = -391.0
+offset_bottom = 1146.0
+button_mask = 3
+flat = true
+script = ExtResource("83_8rkwc")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Esseles"]
+position = Vector2(-32, -27)
+
+[node name="Planet" type="Node2D" parent="Systems/Esseles"]
+position = Vector2(13, 51)
+
+[node name="Ruusan" type="Button" parent="Systems"]
+offset_left = -836.0
+offset_top = 851.0
+offset_right = -673.0
+offset_bottom = 915.0
+button_mask = 3
+flat = true
+script = ExtResource("84_54lkx")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Ruusan"]
+position = Vector2(34, -49)
+
+[node name="Planet" type="Node2D" parent="Systems/Ruusan"]
+position = Vector2(14, 48)
+
+[node name="Crait" type="Button" parent="Systems"]
+offset_left = -1161.0
+offset_top = 815.0
+offset_right = -1055.0
+offset_bottom = 884.0
+button_mask = 3
+flat = true
+script = ExtResource("85_neo6c")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Crait"]
+position = Vector2(0, -62)
+
+[node name="Planet" type="Node2D" parent="Systems/Crait"]
+position = Vector2(13, 57)
+
+[node name="Takodana" type="Button" parent="Systems"]
+offset_left = -537.0
+offset_top = 1238.0
+offset_right = -327.0
+offset_bottom = 1302.0
+button_mask = 3
+flat = true
+script = ExtResource("86_amxhb")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Takodana"]
+position = Vector2(10, -44)
+
+[node name="Planet" type="Node2D" parent="Systems/Takodana"]
+position = Vector2(14, 50)
+
+[node name="Polis Massa" type="Button" parent="Systems"]
+offset_left = -782.0
+offset_top = 1238.0
+offset_right = -648.0
+offset_bottom = 1341.0
+button_mask = 3
+flat = true
+script = ExtResource("87_hqnih")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Polis Massa"]
+position = Vector2(-40, -61)
+
+[node name="Planet" type="Node2D" parent="Systems/Polis Massa"]
+position = Vector2(11, 91)
+
+[node name="Rattatak" type="Button" parent="Systems"]
+offset_left = -815.0
+offset_top = 1430.0
+offset_right = -622.0
+offset_bottom = 1494.0
+button_mask = 3
+flat = true
+script = ExtResource("88_4if4h")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Rattatak"]
+position = Vector2(-32, -27)
+
+[node name="Planet" type="Node2D" parent="Systems/Rattatak"]
+position = Vector2(18, 49)
+
+[node name="Iridonia" type="Button" parent="Systems"]
+offset_left = -301.0
+offset_top = 1467.0
+offset_right = -126.0
+offset_bottom = 1531.0
+button_mask = 3
+flat = true
+script = ExtResource("89_08qoh")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Iridonia"]
+position = Vector2(18, -62)
+
+[node name="Planet" type="Node2D" parent="Systems/Iridonia"]
+position = Vector2(13, 53)
+
+[node name="Endor" type="Button" parent="Systems"]
+offset_left = -688.0
+offset_top = 1610.0
+offset_right = -384.0
+offset_bottom = 1780.0
+button_mask = 3
+flat = true
+script = ExtResource("90_msath")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Endor"]
+position = Vector2(215, 62)
+
+[node name="Planet" type="Node2D" parent="Systems/Endor"]
+position = Vector2(14, 73)
+
+[node name="Kef Bir" type="Button" parent="Systems"]
+offset_left = -787.0
+offset_top = 1671.0
+offset_right = -683.0
+offset_bottom = 1750.0
+button_mask = 3
+flat = true
+script = ExtResource("91_bonmh")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Kef Bir"]
+position = Vector2(-93, 134)
+
+[node name="Planet" type="Node2D" parent="Systems/Kef Bir"]
+position = Vector2(92, 12)
+
+[node name="Shili" type="Button" parent="Systems"]
+offset_left = 94.0
+offset_top = 1121.0
+offset_right = 199.0
+offset_bottom = 1185.0
+button_mask = 3
+flat = true
+script = ExtResource("92_m7tm7")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Shili"]
+position = Vector2(27, -52)
+
+[node name="Planet" type="Node2D" parent="Systems/Shili"]
+position = Vector2(13, 53)
+
+[node name="Atollon" type="Button" parent="Systems"]
+offset_left = 679.0
+offset_top = 1051.0
+offset_right = 833.0
+offset_bottom = 1115.0
+button_mask = 3
+flat = true
+script = ExtResource("93_nxj7j")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Atollon"]
+position = Vector2(-32, -27)
+
+[node name="Planet" type="Node2D" parent="Systems/Atollon"]
+position = Vector2(11, 52)
+
+[node name="Akiva" type="Button" parent="Systems"]
+offset_left = 491.0
+offset_top = 1248.0
+offset_right = 620.0
+offset_bottom = 1330.0
+button_mask = 3
+flat = true
+script = ExtResource("94_8sawn")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Akiva"]
+position = Vector2(-32, -27)
+
+[node name="Planet" type="Node2D" parent="Systems/Akiva"]
+position = Vector2(17, 63)
+
+[node name="Malastare" type="Button" parent="Systems"]
+offset_left = 951.0
+offset_top = 1177.0
+offset_right = 1170.0
+offset_bottom = 1241.0
+button_mask = 3
+flat = true
+script = ExtResource("95_5t1cy")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Malastare"]
+position = Vector2(-12, 135)
+
+[node name="Planet" type="Node2D" parent="Systems/Malastare"]
+position = Vector2(19, 53)
+
+[node name="Bespin and Hoth" type="Button" parent="Systems"]
+offset_left = -54.0
+offset_top = 1766.0
+offset_right = 96.0
+offset_bottom = 1851.0
+button_mask = 3
+flat = true
+script = ExtResource("96_45384")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Bespin and Hoth"]
+position = Vector2(15, -52)
+
+[node name="Planet" type="Node2D" parent="Systems/Bespin and Hoth"]
+position = Vector2(35, 67)
+
+[node name="Bracca" type="Button" parent="Systems"]
+offset_left = 185.0
+offset_top = 1545.0
+offset_right = 334.0
+offset_bottom = 1620.0
+button_mask = 3
+flat = true
+script = ExtResource("97_uetap")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Bracca"]
+position = Vector2(-32, -27)
+
+[node name="Planet" type="Node2D" parent="Systems/Bracca"]
+position = Vector2(13, 61)
+
+[node name="Teth" type="Button" parent="Systems"]
+offset_left = 739.0
+offset_top = 1378.0
+offset_right = 832.0
+offset_bottom = 1442.0
+button_mask = 3
+flat = true
+script = ExtResource("98_ent1m")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Teth"]
+position = Vector2(-32, -27)
+
+[node name="Planet" type="Node2D" parent="Systems/Teth"]
+position = Vector2(12, 50)
+
+[node name="Naboo" type="Button" parent="Systems"]
+offset_left = 1297.0
+offset_top = 1224.0
+offset_right = 1433.0
+offset_bottom = 1288.0
+button_mask = 3
+flat = true
+script = ExtResource("99_dm817")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Naboo"]
+position = Vector2(137, 76)
+
+[node name="Planet" type="Node2D" parent="Systems/Naboo"]
+position = Vector2(14, 51)
+
+[node name="Iego" type="Button" parent="Systems"]
+offset_left = -134.0
+offset_top = 2048.0
+offset_right = -36.0
+offset_bottom = 2112.0
+button_mask = 3
+flat = true
+script = ExtResource("100_yja84")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Iego"]
+position = Vector2(-32, -27)
+
+[node name="Planet" type="Node2D" parent="Systems/Iego"]
+position = Vector2(11, 52)
+
+[node name="Nevarro" type="Button" parent="Systems"]
+offset_left = 309.0
+offset_top = 1860.0
+offset_right = 474.0
+offset_bottom = 1924.0
+button_mask = 3
+flat = true
+script = ExtResource("101_wi8v6")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Nevarro"]
+position = Vector2(62, -49)
+
+[node name="Planet" type="Node2D" parent="Systems/Nevarro"]
+position = Vector2(14, 51)
+
+[node name="Concord Dawn" type="Button" parent="Systems"]
+offset_left = 547.0
+offset_top = 1613.0
+offset_right = 726.0
+offset_bottom = 1729.0
+button_mask = 3
+flat = true
+script = ExtResource("102_rwdg0")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Concord Dawn"]
+position = Vector2(60, -52)
+
+[node name="Planet" type="Node2D" parent="Systems/Concord Dawn"]
+position = Vector2(16, 106)
+
+[node name="Sullust" type="Button" parent="Systems"]
+offset_left = 808.0
+offset_top = 1674.0
+offset_right = 963.0
+offset_bottom = 1738.0
+button_mask = 3
+flat = true
+script = ExtResource("103_mx03s")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Sullust"]
+position = Vector2(71, 100)
+
+[node name="Planet" type="Node2D" parent="Systems/Sullust"]
+position = Vector2(12, 53)
+
+[node name="Fondor" type="Button" parent="Systems"]
+offset_left = 962.0
+offset_top = 1560.0
+offset_right = 1112.0
+offset_bottom = 1631.0
+button_mask = 3
+flat = true
+script = ExtResource("104_ho5tw")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Fondor"]
+position = Vector2(-26, -55)
+
+[node name="Planet" type="Node2D" parent="Systems/Fondor"]
+position = Vector2(12, 58)
+
+[node name="Numidian Prime" type="Button" parent="Systems"]
+offset_left = 1649.0
+offset_top = 1159.0
+offset_right = 1851.0
+offset_bottom = 1261.0
+button_mask = 3
+flat = true
+script = ExtResource("105_o4ugf")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Numidian Prime"]
+position = Vector2(-28, -61)
+
+[node name="Planet" type="Node2D" parent="Systems/Numidian Prime"]
+position = Vector2(14, 91)
+
+[node name="D\'Qar" type="Button" parent="Systems"]
+offset_left = 1347.0
+offset_top = 1426.0
+offset_right = 1472.0
+offset_bottom = 1493.0
+button_mask = 3
+flat = true
+script = ExtResource("106_rlhuc")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/D\'Qar"]
+position = Vector2(2, -51)
+
+[node name="Planet" type="Node2D" parent="Systems/D\'Qar"]
+position = Vector2(15, 56)
+
+[node name="Lah\'mu" type="Button" parent="Systems"]
+offset_left = 1263.0
+offset_top = 1745.0
+offset_right = 1420.0
+offset_bottom = 1809.0
+button_mask = 3
+flat = true
+script = ExtResource("107_b4gb2")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Lah\'mu"]
+position = Vector2(65, 75)
+
+[node name="Planet" type="Node2D" parent="Systems/Lah\'mu"]
+position = Vector2(14, 52)
+
+[node name="Geonosis" type="Button" parent="Systems"]
+offset_left = 1510.0
+offset_top = 1482.0
+offset_right = 1705.0
+offset_bottom = 1535.0
+button_mask = 3
+flat = true
+script = ExtResource("108_4gh2k")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Geonosis"]
+position = Vector2(25, 105)
+
+[node name="Planet" type="Node2D" parent="Systems/Geonosis"]
+position = Vector2(186, 9)
+
+[node name="Tatooine" type="Button" parent="Systems"]
+offset_left = 1704.0
+offset_top = 1432.0
+offset_right = 1885.0
+offset_bottom = 1486.0
+button_mask = 3
+flat = true
+script = ExtResource("109_8v8t0")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Tatooine"]
+position = Vector2(62, -46)
+
+[node name="Planet" type="Node2D" parent="Systems/Tatooine"]
+position = Vector2(8, 45)
+
+[node name="Bogano" type="Button" parent="Systems"]
+offset_left = 2019.0
+offset_top = 1223.0
+offset_right = 2176.0
+offset_bottom = 1287.0
+button_mask = 3
+flat = true
+script = ExtResource("110_x82i7")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Bogano"]
+position = Vector2(-32, -27)
+
+[node name="Planet" type="Node2D" parent="Systems/Bogano"]
+position = Vector2(11, 54)
+
+[node name="Dagobah" type="Button" parent="Systems"]
+offset_left = 879.0
+offset_top = 1973.0
+offset_right = 1070.0
+offset_bottom = 2047.0
+button_mask = 3
+flat = true
+script = ExtResource("111_kwj7d")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Dagobah"]
+position = Vector2(56, -46)
+
+[node name="Planet" type="Node2D" parent="Systems/Dagobah"]
+position = Vector2(12, 60)
+
+[node name="Utapau" type="Button" parent="Systems"]
+offset_left = 976.0
+offset_top = 2066.0
+offset_right = 1133.0
+offset_bottom = 2130.0
+button_mask = 3
+flat = true
+script = ExtResource("112_lfpk4")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Utapau"]
+position = Vector2(-42, 109)
+
+[node name="Planet" type="Node2D" parent="Systems/Utapau"]
+position = Vector2(13, 50)
+
+[node name="Sorgan" type="Button" parent="Systems"]
+offset_left = 1168.0
+offset_top = 2089.0
+offset_right = 1325.0
+offset_bottom = 2153.0
+button_mask = 3
+flat = true
+script = ExtResource("113_lixpw")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Sorgan"]
+position = Vector2(76, -42)
+
+[node name="Planet" type="Node2D" parent="Systems/Sorgan"]
+position = Vector2(16, 53)
+
+[node name="Jestefad" type="Button" parent="Systems"]
+offset_left = 365.0
+offset_top = 2099.0
+offset_right = 548.0
+offset_bottom = 2163.0
+button_mask = 3
+flat = true
+script = ExtResource("114_3w2cs")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Jestefad"]
+position = Vector2(18, -42)
+
+[node name="Planet" type="Node2D" parent="Systems/Jestefad"]
+position = Vector2(10, 53)
+
+[node name="Mustafar" type="Button" parent="Systems"]
+offset_left = 364.0
+offset_top = 2163.0
+offset_right = 547.0
+offset_bottom = 2218.0
+button_mask = 3
+flat = true
+script = ExtResource("115_rncbh")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Mustafar"]
+position = Vector2(59, 98)
+
+[node name="Planet" type="Node2D" parent="Systems/Mustafar"]
+position = Vector2(11, 10)
+
+[node name="Nur" type="Button" parent="Systems"]
+offset_left = 264.0
+offset_top = 2158.0
+offset_right = 364.0
+offset_bottom = 2191.0
+button_mask = 3
+flat = true
+script = ExtResource("116_glyam")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Nur"]
+position = Vector2(-95, 60)
+
+[node name="Planet" type="Node2D" parent="Systems/Nur"]
+position = Vector2(89, 15)
+
+[node name="Anaxes" type="Button" parent="Systems"]
+offset_left = 880.0
+offset_top = 2233.0
+offset_right = 1037.0
+offset_bottom = 2297.0
+button_mask = 3
+flat = true
+script = ExtResource("117_w2j02")
+
+[node name="OrbitSlot" type="Node2D" parent="Systems/Anaxes"]
+position = Vector2(80, 111)
+
+[node name="Planet" type="Node2D" parent="Systems/Anaxes"]
+position = Vector2(16, 53)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+offset = Vector2(50, 50)
+transform = Transform2D(1, 0, 0, 1, 50, 50)
+
+[node name="Node2D" type="Node2D" parent="CanvasLayer"]
+script = ExtResource("119_l7al2")
+
+[node name="MultiplayerSpawner" type="MultiplayerSpawner" parent="."]
+_spawnable_scenes = PackedStringArray("res://player.tscn")
+spawn_path = NodePath("../CanvasLayer")
+
+[node name="MainMenu" parent="." instance=ExtResource("2_rn4nl")]
+visible = false
